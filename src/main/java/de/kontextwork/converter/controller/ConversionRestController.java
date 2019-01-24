@@ -26,7 +26,7 @@ public class ConversionRestController {
     private ConverterService converterService;
 
     @RequestMapping(path = "", method = RequestMethod.POST)
-    public ResponseEntity<?> convert(@RequestParam(name="format", defaultValue = "pdf") final String targetFormatExt, @RequestParam("file") final MultipartFile inputMultipartFile) throws IOException, OfficeException {
+    public ResponseEntity<?> convert(@RequestParam(name="format", defaultValue = "png") final String targetFormatExt, @RequestParam("file") final MultipartFile inputMultipartFile) throws IOException, OfficeException {
         final DocumentFormat targetFormat = DefaultDocumentFormatRegistry.getFormatByExtension(targetFormatExt);
 
         if (targetFormat == null) {

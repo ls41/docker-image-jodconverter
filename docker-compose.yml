@@ -9,6 +9,7 @@ services:
     command: -Pdev bootRun
     volumes:
       - ./:/src
+      - /usr/share/fonts:/usr/share/fonts
     ports:
       - 5001:5001
       - 8080:8080
