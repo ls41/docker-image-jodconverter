@@ -13,12 +13,15 @@ spring:
     name: Converter
   main:
     banner-mode: "off"
-
+  data:
+    mongodb:
+      uri: mongodb://192.168.1.214:27017/gridfsdemo
 jodconverter:
   local:
     enabled: true
     port-numbers: 2002
     working-dir: /tmp
+#    office-home: /office
 
 logging:
   level:
