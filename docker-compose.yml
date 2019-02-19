@@ -9,7 +9,8 @@ services:
     command: -Pdev bootRun
     volumes:
       - ./:/src
-      - /usr/share/fonts:/usr/share/fonts
+#      - /usr/share/fonts:/usr/share/fonts
+      - /c/Windows/Fonts:/usr/share/fonts
 #      - /home/lsy/gradle/wrapper:/src/gradle/wrapper/
     ports:
       - 5001:5001
