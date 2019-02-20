@@ -9,11 +9,9 @@ services:
     command: -Pdev bootRun
     volumes:
       - ./:/src
-#      - /usr/share/fonts:/usr/share/fonts
-      - /c/Windows/Fonts:/usr/share/fonts
-#      - /home/lsy/gradle/wrapper:/src/gradle/wrapper/
+      - /usr/share/fonts:/usr/share/fonts
+#      - /c/Windows/Fonts:/usr/share/fonts
     ports:
       - 5001:5001
-      - 2002:2002
-      - 8080:8080
+      - 8849:8080
     mem_limit: 512M
